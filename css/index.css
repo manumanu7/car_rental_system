@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(192, 189, 189);
+}
+
+/* Header */
+
+.header{
+    background: linear-gradient(rgba(0,0,0,0.7),rgb(0,0,0,0.7)),url("../images/main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.header .nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 30px;
+}
+.header .nav .logo-a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 30s;
+    cursor: pointer;
+}
+.header .nav .logo-text{
+    margin-left: 10px;
+    font-size: 15px;
+    display: none;
+}
+.header .nav .logo-a:hover .logo-text{
+    display: block;
+}
+.header .nav .logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+.header .nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+.header .nav ul li{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.header .nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 0 8px;
+    transition: 0.3s;
+}
+.header .nav ul li a:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(118, 177, 118);
+    transition: 0.3s;
+}
+.header .nav ul li a:hover:after{
+    width: 100%;
+}
+.header .nav ul li a:hover{
+    color: rgb(118, 177, 118);
+}
+
+.header .content{
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.header .content h3{
+    font-size: 100px;
+    margin-top: 70px;
+}
+.header .content p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    color: rgb(180, 170, 170);
+    margin-bottom: 50px;
+}
+.header .content .button{
+    font-size: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(118, 177, 118);
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.header .content .button:hover{
+    background: transparent;
+    border: 1px solid rgb(118, 177, 118);
+    color: rgb(118, 177, 118);
+}
+
+
+/* Cars */
+
+.cars{
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.cars h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: rgb(60, 37, 25);
+}
+
+.cars .items{
+    display: flex;
+    margin: 20px;
+}
+.cars .items .item{
+    margin: 50px;
+    padding: 20px;
+    height: auto;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+.cars .items .item img{
+    width: 100%;   
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: 5px;
+}
+.cars .items .item .details{
+    text-align: left;
+    text-transform: capitalize;
+    padding: 30px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background-color: rgb(133, 139, 94);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.car_button{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 177, 118);
+    margin: 30px 650px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* About */
+
+.about{
+    height: 100vh;
+    margin: 0 20px;
+}
+
+.about h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: rgb(60, 37, 25);
+}
+
+.about .abo-con{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.about .main-con{
+    background-color: rgb(0, 147, 95);
+    height: 550px;
+    width: 800px;
+    margin-right: 100px;
+    padding-left: 200px;
+    padding-top: 50px;
+    color: #fff;
+}
+.about .main-con h3{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.about .main-con p{
+    font-size: 18px;
+    color: rgb(196, 190, 190);
+    margin-right: 30px;
+}
+.about .main-con a{
+    padding: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(0, 147, 95);
+    transition: 0.3s;
+}
+.about .main-con a:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.about .abo-con img{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    top: 50px;
+    right: -80px;
+}
+
+
+/* Services */
+
+.services{
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.services .our{
+    height: 80%;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgb(0,0,0,0.5)),url("../images/service.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+}
+.services .our h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: #fff;
+    padding-top: 20px;
+}
+.services .our .service{
+    display: flex;
+    margin-top: 50px;
+}
+.services .our .service .item{
+    width: 500px;
+    height: 350px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+.services .our .service .item img{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    border: 5px solid rgb(1, 155, 244);
+    border-radius: 50%;
+}
+.services .our .service .item h4{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.services .our .service .item p{
+    font-size: 15px;
+    max-width: 300px;
+    margin-left: 70px;
+}
+
+
