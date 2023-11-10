@@ -9,7 +9,7 @@
     use PHPMailer\PHPMailer\Exception;
 
 
-    $otp=rand(0000,9999);
+    $otp=rand(1000,9999);
     $sql="update user set otp=$otp where mail='$_SESSION[mail]'";
     // $result=$conn->query($sql);
     if($conn->query($sql)){

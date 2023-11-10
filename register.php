@@ -114,7 +114,7 @@
                 $mess="User already Exist please try login";
             }
             else{
-                $otp=rand(0000,9999);
+                $otp=rand(1000,9999);
                 $sql="INSERT INTO `user` VALUES ('$full_name','$email','','','$otp','False','$profile_pic')";
                 // $result=$conn->query($sql);
                 if($conn->query($sql) === TRUE){
