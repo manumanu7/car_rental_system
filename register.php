@@ -170,6 +170,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
@@ -186,7 +187,7 @@
                 <label for="number">phone Number<span>*</span></label>  <input type="number" name="number" id="number" placeholder="Enter Your mobile number" required onkeyup="checknumber()" onfocusout="checknumbervalid()"> <br>
                 <label for="password">Password <span>*</span></label>  <input type="password" name="password" id="password" placeholder="Create a Password" required onkeyup="checkpassword()" onfocusout="checkpasswordvalid()"><br>
                 <label for="conform">Conform Password <span>*</span></label>  <input type="password" name="conform" id="conform" placeholder="Re-Enter the Password" onkeyup="checkupass()" onfocusout="checkupassmatch()" required><br><br>
-                <input type="checkbox" name="declaration" id="declaration" value="True" class="declaration" required><label for="declaration" class="dec">I accept the <a href="">Terms and conditins</a> and <a href="">Private policy</a> mentioned.</label>
+                <input type="checkbox" name="declaration" id="declaration" value="True" class="declaration" required><label for="declaration" class="dec">I accept the <a href="">Terms and conditions</a> and <a href="">Private policy</a> mentioned.</label>
                 <span id="mess" style="color:red"><?php echo $mess; ?></span><br>
                 <span class="note">Note : * marks are required to fill.</span>
                 <input type="submit" value="Register" name="register">

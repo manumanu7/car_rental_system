@@ -43,7 +43,15 @@
             }
         }
         else{
-            $mess="Invalid Email or Password";
+            $s="SELECT * FROM `user` WHERE `mail` = '$email' and `password`=''";
+            $r=$conn->query($s);
+            if($r->num_rows > 0){
+                $mess="This mail is registered with google account try login with Google";
+                // header("Location:forgot.php");
+            }
+            else{
+                $mess="Invalid Email or Password";
+            }
         }
     }
 
@@ -115,6 +123,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
@@ -133,10 +142,12 @@
                 <input type="submit" value="submit" name="submit">
                 <span class="or">OR</span>
             </form>
-
+            
             <button class="google">
                 <a class="login-with-google-btn btn" href="<?php echo $client->createAuthUrl(); ?>">Sign in with Google</a>
             </button><br>
+            <label>Forget Password?</label> <a href="forgot.php" class="already">click here</a><br>
+            <br>
             <label>Don't have an account?</label> <a href="register.php" class="already">click here</a>
         </div>
     </div>

@@ -88,3 +88,8 @@ body{
 #mess{
     margin: 20px;
 }
+
+/* Resend otp  */
+.resend{
+    text-decoration: none;
+}

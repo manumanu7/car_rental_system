@@ -5,7 +5,12 @@
 
     require 'config.php';
 
+    use PHPMailer\PHPMailer\PHPMailer; 
+    use PHPMailer\PHPMailer\SMTP; 
+    use PHPMailer\PHPMailer\Exception; 
+
     $mess="";
+
 
     if(isset($_POST['submit'])){
         $otp=$_POST['otp'];
@@ -55,6 +60,7 @@
                 <label for="otp">Enter Your OTP : <span>*</span></label>
                 <input type="number" id="otp" name="otp" placeholder="Enter OTP" required>
                 <span id="mess" style="color:red"><?php echo $mess; ?></span><br>
+                <a href="resend.php" class="resend">Resend OTP</a>
                 <input type="submit" value="submit" name="submit">
             </form>
         </div>
