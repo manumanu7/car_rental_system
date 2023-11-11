@@ -129,7 +129,7 @@
 <body>
 
     <div class="types">
-        <h1>Login Page</h1>
+        <h1>User Login Page</h1>
         <div class="registration-user" id="usert">
             
             <h3>Login here :</h3>
